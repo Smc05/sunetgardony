@@ -28,6 +28,7 @@ export default function Navbar() {
               width={48}
               height={48}
               className="rounded-lg"
+              style={{ width: 48, height: "auto" }}
             />
             <span className="font-[family-name:var(--font-playfair)] text-lg font-bold text-sunset-gold hidden sm:block">
               Sunset Apartment Gárdony

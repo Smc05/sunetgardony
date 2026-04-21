@@ -33,6 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="hu"
+      data-scroll-behavior="smooth"
       className={`${cormorant.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-[family-name:var(--font-lato)]">

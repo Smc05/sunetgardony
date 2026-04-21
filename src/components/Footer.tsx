@@ -61,6 +61,7 @@ export default function Footer() {
                 width={40}
                 height={40}
                 className="rounded-lg"
+                style={{ width: 40, height: "auto" }}
               />
               <span className="font-[family-name:var(--font-playfair)] text-xl font-bold text-sunset-gold">
                 Sunset Apartment Gárdony
