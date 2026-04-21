@@ -98,8 +98,8 @@ export default function Footer() {
             </h3>
             <div className="space-y-2 text-sm">
               <p>📍 2483 Gárdony, Körösi Csoma Sándor tér 3.</p>
-              <p>📞 +36 30 123 4567</p>
-              <p>✉️ info@sunsetgardony.hu</p>
+              <p>📞 +36 20 534 9739</p>
+              <p>✉️ sunset.gardony@gmail.com</p>
             </div>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (

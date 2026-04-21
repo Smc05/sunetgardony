@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Kezdőlap" },
@@ -13,12 +14,13 @@ const navLinks = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-sunset-dark/90 backdrop-blur-md border-b border-sunset-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          {/* Logo */}
+          {/* Logo + Title */}
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/assets/logo/logo-t-bg.png"
@@ -27,6 +29,9 @@ export default function Navbar() {
               height={48}
               className="rounded-lg"
             />
+            <span className="font-[family-name:var(--font-playfair)] text-lg font-bold text-sunset-gold hidden sm:block">
+              Sunset Apartment Gárdony
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -35,13 +40,17 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sunset-cream/80 hover:text-sunset-gold transition-colors text-sm font-medium"
+                className={`transition-colors text-sm font-medium ${
+                  pathname === link.href
+                    ? "text-sunset-orange"
+                    : "text-sunset-cream/80 hover:text-sunset-gold"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-5 py-2 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all shadow-lg hover:shadow-sunset-orange/40 text-sm"
@@ -76,13 +85,17 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-sunset-cream/80 hover:text-sunset-gold transition-colors text-base py-2"
+                className={`block transition-colors text-base py-2 ${
+                  pathname === link.href
+                    ? "text-sunset-orange font-semibold"
+                    : "text-sunset-cream/80 hover:text-sunset-gold"
+                }`}
               >
                 {link.label}
               </Link>
             ))}
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center mt-3 px-5 py-3 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all"

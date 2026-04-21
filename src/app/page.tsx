@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all shadow-xl hover:shadow-sunset-orange/50 text-lg"
@@ -117,23 +117,22 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "Naplemente a tó felett",
-              "Hálószoba",
-              "Terasz",
-              "Nappali",
-            ].map((title, i) => (
+              "/assets/images/839687427.jpg",
+              "/assets/images/839687491.jpg",
+              "/assets/images/839687503.jpg",
+              "/assets/images/839687636.jpg",
+            ].map((src, i) => (
               <div
                 key={i}
-                className="aspect-square rounded-2xl bg-gradient-to-br from-sunset-light to-sunset-gold/30 flex items-center justify-center group hover:scale-105 transition-transform cursor-pointer overflow-hidden"
+                className="aspect-square rounded-2xl overflow-hidden group hover:scale-105 transition-transform cursor-pointer relative"
               >
-                <div className="text-center p-4">
-                  <span className="text-4xl block mb-2">
-                    {["🌅", "🛏️", "🏡", "🛋️"][i]}
-                  </span>
-                  <span className="text-sunset-burgundy/70 text-sm font-medium">
-                    {title}
-                  </span>
-                </div>
+                <Image
+                  src={src}
+                  alt={`Apartman – ${i + 1}. kép`}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                />
               </div>
             ))}
           </div>

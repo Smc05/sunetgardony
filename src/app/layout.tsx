@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollAnimations from "@/components/ScrollAnimations";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-playfair",
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-[family-name:var(--font-lato)]">
         <Navbar />
+        <ScrollAnimations />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

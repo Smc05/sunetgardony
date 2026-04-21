@@ -33,11 +33,11 @@ const galleryImages = [
   { src: "/assets/images/839688464.jpg", alt: "Apartman" },
   { src: "/assets/images/839688498.jpg", alt: "Apartman" },
   { src: "/assets/images/839688526.jpg", alt: "Apartman" },
-  { src: "/assets/images/1776542623864.jpg", alt: "Apartman" },
 ];
 
 export default function Gallery() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
@@ -71,8 +71,15 @@ export default function Gallery() {
 
   return (
     <>
-      {/* Grid */}
-      <div className="columns-2 sm:columns-3 lg:columns-4 gap-3 space-y-3">
+      {/* Collapsible grid */}
+      <div className="relative">
+        <div
+          className="columns-2 sm:columns-3 lg:columns-4 gap-3 space-y-3 overflow-hidden"
+          style={{
+            maxHeight: isExpanded ? "9999px" : "500px",
+            transition: "max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
+        >
         {galleryImages.map((img, i) => (
           <button
             key={i}
@@ -108,6 +115,34 @@ export default function Gallery() {
             </div>
           </button>
         ))}
+        </div>
+
+        {/* Fade overlay */}
+        <div
+          className="absolute inset-x-0 bottom-0 h-52 bg-gradient-to-t from-white via-white/70 to-transparent pointer-events-none"
+          style={{ opacity: isExpanded ? 0 : 1, transition: "opacity 0.5s ease" }}
+        />
+
+        {/* Expand / Collapse button */}
+        <div className="relative z-10 flex justify-center mt-6">
+          <button
+            onClick={() => setIsExpanded((v) => !v)}
+            className="flex items-center gap-2 px-8 py-3 bg-sunset-burgundy text-white rounded-full font-semibold text-sm tracking-wide hover:bg-sunset-orange transition-colors duration-300 shadow-lg hover:shadow-xl"
+          >
+            {isExpanded ? "Összecsukás" : "Összes kép megtekintése"}
+            <svg
+              className={`w-4 h-4 transition-transform duration-300 ${
+                isExpanded ? "rotate-180" : ""
+              }`}
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       {/* Lightbox */}

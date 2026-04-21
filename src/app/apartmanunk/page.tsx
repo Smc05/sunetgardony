@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Gallery from "@/components/Gallery";
 
 export const metadata: Metadata = {
@@ -26,9 +27,24 @@ export default function Apartmanunk() {
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Placeholder kép */}
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-sunset-light to-sunset-gold/40 flex items-center justify-center">
-              <span className="text-8xl">🏡</span>
+            {/* Képek az Apartmanról */}
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                "/assets/images/839687427.jpg",
+                "/assets/images/839687491.jpg",
+                "/assets/images/839687503.jpg",
+                "/assets/images/839687636.jpg",
+              ].map((src, i) => (
+                <div key={i} className="aspect-[4/3] relative overflow-hidden rounded-xl">
+                  <Image
+                    src={src}
+                    alt={`Apartman – ${i + 1}. kép`}
+                    fill
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+              ))}
             </div>
 
             <div>
@@ -58,6 +74,20 @@ export default function Apartmanunk() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Képek az Apartmanról – Galéria */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
+            Képek az Apartmanról
+          </h2>
+          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
+          <p className="text-center text-sunset-dark/60 mb-10 max-w-xl mx-auto">
+            Kattintson bármelyik képre a nagyobb nézethez – és böngésszen végig az összes fotón.
+          </p>
+          <Gallery />
         </div>
       </section>
 
@@ -297,20 +327,6 @@ export default function Apartmanunk() {
         </div>
       </section>
 
-      {/* Galéria */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
-            Galéria
-          </h2>
-          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
-          <p className="text-center text-sunset-dark/60 mb-12 max-w-xl mx-auto">
-            Kattintson bármelyik képre a nagyobb nézethez – és böngésszen végig az összes fotón.
-          </p>
-          <Gallery />
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="py-16 sunset-gradient">
         <div className="max-w-4xl mx-auto px-4 text-center">
@@ -322,7 +338,7 @@ export default function Apartmanunk() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-white text-sunset-orange font-bold rounded-full text-lg hover:bg-sunset-cream transition-all shadow-xl"
