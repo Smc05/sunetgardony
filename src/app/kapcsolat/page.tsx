@@ -85,25 +85,6 @@ export default function Kapcsolat() {
                     </a>
                   </div>
                 </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center text-xl shrink-0">
-                    💬
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-sunset-dark">
-                      Messenger
-                    </h3>
-                    <a
-                      href="https://m.me/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sunset-orange hover:text-sunset-red transition-colors"
-                    >
-                      Írjon nekünk Messengeren – 10% kedvezmény!
-                    </a>
-                  </div>
-                </div>
               </div>
 
               {/* Közösségi média */}
@@ -148,7 +129,7 @@ export default function Kapcsolat() {
                     Köszönjük üzenetét!
                   </h3>
                   <p className="text-sunset-dark/60">
-                    Hamarosan válaszolunk. Addig is nézze meg ajánlatainkat!
+                    Hamarosan válaszolunk. Addig is nézze meg apartmanunkat!
                   </p>
                   <button
                     onClick={() => {
@@ -297,14 +278,6 @@ export default function Kapcsolat() {
               className="px-8 py-4 bg-white text-sunset-orange font-bold rounded-full text-lg hover:bg-sunset-cream transition-all shadow-xl"
             >
               Foglalás a Booking.com-on
-            </a>
-            <a
-              href="https://m.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-sunset-orange font-bold rounded-full text-lg transition-all"
-            >
-              💬 Messenger – 10% kedvezmény
             </a>
           </div>
         </div>

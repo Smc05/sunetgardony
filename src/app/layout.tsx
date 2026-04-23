@@ -23,6 +23,10 @@ export const metadata: Metadata = {
     "Csodáld meg a Velencei-tó legszebb naplementéit a romantikus tetőtéri apartmanunkból. Foglaljon most!",
   keywords:
     "szálláshely, Velencei-tó, naplemente, romantikus, apartman, Gárdony",
+  icons: {
+    icon: "/assets/logo/logo-t-bg.png",
+    apple: "/assets/logo/logo-t-bg.png",
+  },
 };
 
 export default function RootLayout({

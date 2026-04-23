@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "Kezdőlap" },
   { href: "/apartmanunk", label: "Apartmanunk" },
-  { href: "/ajanlataink", label: "Ajánlataink" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 
@@ -43,7 +42,7 @@ export default function Navbar() {
                 href={link.href}
                 className={`transition-colors text-sm font-medium ${
                   pathname === link.href
-                    ? "text-sunset-orange"
+                    ? "text-sunset-orange border-b-2 border-sunset-orange pb-1"
                     : "text-sunset-cream/80 hover:text-sunset-gold"
                 }`}
               >

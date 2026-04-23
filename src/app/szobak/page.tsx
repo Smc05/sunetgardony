@@ -155,26 +155,6 @@ export default function Szobak() {
         </div>
       </section>
 
-      {/* Messenger CTA */}
-      <section className="py-16 sunset-gradient">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-4">
-            Kérdése van a szobákról?
-          </h2>
-          <p className="text-white/80 text-lg mb-8">
-            Írjon nekünk Messengeren! Gyorsan válaszolunk, és 10% kedvezményt is
-            kap a foglalásra.
-          </p>
-          <a
-            href="https://m.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-white text-sunset-orange font-bold rounded-full text-lg hover:bg-sunset-cream transition-all shadow-xl"
-          >
-            💬 Írjon Messengeren
-          </a>
-        </div>
-      </section>
     </>
   );
 }

@@ -40,14 +40,6 @@ export default function Home() {
             >
               Foglalás a Booking.com-on
             </a>
-            <a
-              href="https://m.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-sunset-gold text-sunset-gold hover:bg-sunset-gold hover:text-sunset-dark font-bold rounded-full transition-all text-lg"
-            >
-              💬 Messenger – 10% kedvezmény
-            </a>
           </div>
         </div>
 
@@ -117,9 +109,9 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "/assets/images/839687427.jpg",
-              "/assets/images/839687491.jpg",
-              "/assets/images/839687503.jpg",
+              "/assets/images/839688042.jpg",
+              "/assets/images/839687937.jpg",
+              "/assets/images/839688297.jpg",
               "/assets/images/839687636.jpg",
             ].map((src, i) => (
               <div
@@ -167,7 +159,7 @@ export default function Home() {
               { icon: "⛰️", label: "Túrázás" },
               { icon: "🚴", label: "Kerékpározás a tó körül" },
               { icon: "🌿", label: "Tiszta vidéki levegő" },
-              { icon: "🏍️", label: "Motorozás" },
+              { icon: "♨️", label: "Agárdi Gyógy- és Termálfürdő" },
               { icon: "🎣", label: "Horgászás" },
               { icon: "🍽️", label: "Gasztronómia" },
               { icon: "🎭", label: "Programok" },
@@ -186,71 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Messenger CTA */}
-      <section className="py-16 sunset-gradient">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-white mb-4">
-            Foglaljon Messengeren – Spóroljon 10%-ot!
-          </h2>
-          <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Írjon nekünk közvetlenül Messengeren és automatikusan 10%
-            kedvezményt kap a Booking.com-os árhoz képest. Gyors válasz,
-            személyes kiszolgálás!
-          </p>
-          <a
-            href="https://m.me/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-white text-sunset-orange font-bold rounded-full text-lg hover:bg-sunset-cream transition-all shadow-xl"
-          >
-            💬 Írjon nekünk Messengeren
-          </a>
-        </div>
-      </section>
-
-      {/* Gyors linkek */}
-      <section className="py-20 bg-sunset-cream">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Link
-              href="/apartmanunk"
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-sunset-gold/10"
-            >
-              <span className="text-4xl block mb-4">🏠</span>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2 group-hover:text-sunset-orange transition-colors">
-                Apartmanunk
-              </h3>
-              <p className="text-sunset-dark/60 text-sm">
-                Ismerje meg szálláshelyünk történetét és egyedi hangulatát.
-              </p>
-            </Link>
-            <Link
-              href="/kapcsolat"
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-sunset-gold/10"
-            >
-              <span className="text-4xl block mb-4">📞</span>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2 group-hover:text-sunset-orange transition-colors">
-                Kapcsolat
-              </h3>
-              <p className="text-sunset-dark/60 text-sm">
-                Vegye fel velünk a kapcsolatot, szívesen segítünk!
-              </p>
-            </Link>
-            <Link
-              href="/ajanlataink"
-              className="group p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all border border-sunset-gold/10"
-            >
-              <span className="text-4xl block mb-4">💝</span>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2 group-hover:text-sunset-orange transition-colors">
-                Ajánlataink
-              </h3>
-              <p className="text-sunset-dark/60 text-sm">
-                Fedezze fel akciós csomagjainkat és romantikus ajánlatainkat.
-              </p>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

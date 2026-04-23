@@ -30,9 +30,9 @@ export default function Apartmanunk() {
             {/* Képek az Apartmanról */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                "/assets/images/839687427.jpg",
-                "/assets/images/839687491.jpg",
-                "/assets/images/839687503.jpg",
+                "/assets/images/839688042.jpg",
+                "/assets/images/839687937.jpg",
+                "/assets/images/839688297.jpg",
                 "/assets/images/839687636.jpg",
               ].map((src, i) => (
                 <div key={i} className="aspect-[4/3] relative overflow-hidden rounded-xl">
@@ -49,28 +49,16 @@ export default function Apartmanunk() {
 
             <div>
               <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy mb-6">
-                Üdvözöljük a Sunset Apartment Gárdony-ban
+                Üdvözöljük a Sunset Apartment-ben
               </h2>
               <p className="text-sunset-dark/80 leading-relaxed mb-4">
-                A lakás egy családi ház tetőterében található, külön
-                bejárattal, saját parkolóval. Az apartman 4-6 fő részére
-                kínál kényelmes elhelyezést.
+                Szeretettel várunk Gárdonyban található, világos és hangulatos tetőtéri lakásunkban, amely ideális választás családoknak, baráti társaságoknak, de akár hosszabb tartózkodásra érkezők számára is. A lakás két külön hálószobával, egy fürdőszobával, nappalival és jól felszerelt konyhával rendelkezik, így akár hat fő elhelyezését is biztosítja.
               </p>
               <p className="text-sunset-dark/80 leading-relaxed mb-4">
-                A szálláshely a Velencei-tó közelében, Agárdon található,
-                csendes, nyugodt környezetben. A környék számtalan
-                lehetőséget kínál: fürdés a Velencei-tóban, nyugodt pihenés,
-                kirándulás, túrázás, kerékpározás a tó körül.
-              </p>
-              <p className="text-sunset-dark/80 leading-relaxed mb-4">
-                Az Agárdi Gyógy- és Termálfürdő sétatávolságra van a
-                szálláshelytől. Az apartman kiválóan felszerelt konyhával,
-                hűtő-fűtő klímával, ingyenes WiFi-vel és ingyenes
-                parkolóval rendelkezik.
+                A tetőtéri elhelyezkedésnek köszönhetően a lakást körberagyogja a nap a napfelkeltétől napnyugtáig, ami igazán kellemes, otthonos hangulatot teremt. A nyári melegben a komfortodról ingyenesen biztosított légkondicionálás gondoskodik 25°C felett, és a napvédő roló is lehúzható az ablakon. A hidegebb hónapokban a központi fűtés garantálja a meleget, illetve a klímával fűteni is lehet. A ház előtt parkolási lehetőség is adott, előzetes egyeztetés alapján akár két autó számára is tudunk helyet biztosítani.
               </p>
               <p className="text-sunset-dark/80 leading-relaxed">
-                Vendégeinket szeretettel várjuk egész évben – 4 évszakos
-                szálláshely vagyunk!
+                A konyhában minden megtalálható, ami egy gyors étkezéshez szükséges: sütő, mikrohullámú sütő, indukciós főzőlap, hűtő, vízforraló, kávéfőző, pirítós sütő és szendvicssütő áll a vendégek rendelkezésére. Ugyanakkor a városban számos kedvező árú, kiváló étterem is elérhető, így akár a főzéssel sem kell foglalkoznod. Okos TV is van a lakásban és wifi használati lehetőség. Az apartmanba lifttel is s lépcsőn is fel lehet jutni. Gyermekeket 9 éves kor felett tudunk fogadni, mert a lakásban is, ahogy a képen is látszik, szintén van egy kis belső lépcsőház.
               </p>
             </div>
           </div>
@@ -203,8 +191,7 @@ export default function Apartmanunk() {
                   <div>
                     <p className="font-semibold text-sunset-dark">Vonattal</p>
                     <p className="text-sunset-dark/60 text-sm">
-                      Budapest-Déli pályaudvarról közvetlen járat Agárd
-                      megállóig. Az állomástól kb. 10 perc séta.
+                      Gárdony megállóig. Az állomástól busszal kb. 10 perc.
                     </p>
                   </div>
                 </div>
@@ -213,8 +200,7 @@ export default function Apartmanunk() {
                   <div>
                     <p className="font-semibold text-sunset-dark">Busszal</p>
                     <p className="text-sunset-dark/60 text-sm">
-                      Volánbusz járatok Székesfehérvárról és Budapestről. Agárd
-                      központi megálló 5 perc sétára.
+                      Gárdony központi megállójában át kell szállni a helyi járatra.
                     </p>
                   </div>
                 </div>
@@ -254,7 +240,7 @@ export default function Apartmanunk() {
               { icon: "🛏️", title: "Ágynemű & törölköző", desc: "Személyenként 1-1 törölköző, kéztörlő és ágynemű nagypárnával" },
               { icon: "🍳", title: "Felszerelt konyha", desc: "Hűtő, indukciós főzőlap, sütő, mikró, vízforraló, kávéfőző, pirítós, melegszendvics sütő" },
               { icon: "🎫", title: "Ingyenes parkolás", desc: "Ingyenes parkolási lehetőség a szálláshelyen" },
-              { icon: "👥", title: "4 személyes", desc: "4 személy részére kényelmes, a kanapé a nappaliban kinyitható + 2 fő részére" },
+              { icon: "👥", title: "4-6 személyes", desc: "4-6 személy részére kényelmes, a kanapé a nappaliban kinyitható + 2 fő részére" },
               { icon: "🛋️", title: "140-es kanapé", desc: "Kinyitható kanapéágy" },
               { icon: "📺", title: "Full HD okos TV", desc: "Smart TV streaming lehetőséggel" },
               { icon: "🚲", title: "Kerékpár tároló", desc: "Biztonságos kerékpár tárolási lehetőség" },
@@ -344,14 +330,6 @@ export default function Apartmanunk() {
               className="px-8 py-4 bg-white text-sunset-orange font-bold rounded-full text-lg hover:bg-sunset-cream transition-all shadow-xl"
             >
               Foglalás a Booking.com-on
-            </a>
-            <a
-              href="https://m.me/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-sunset-orange font-bold rounded-full text-lg transition-all"
-            >
-              💬 Messenger – 10% kedvezmény
             </a>
           </div>
         </div>
