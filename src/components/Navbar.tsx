@@ -8,12 +8,16 @@ import { usePathname } from "next/navigation";
 const navLinks = [
   { href: "/", label: "Kezdőlap" },
   { href: "/apartmanunk", label: "Apartmanunk" },
+  { href: "/araink", label: "Áraink" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-sunset-dark/90 backdrop-blur-md border-b border-sunset-gold/20">
@@ -41,7 +45,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`transition-colors text-sm font-medium ${
-                  pathname === link.href
+                  isActive(link.href)
                     ? "text-sunset-orange border-b-2 border-sunset-orange pb-1"
                     : "text-sunset-cream/80 hover:text-sunset-gold"
                 }`}
@@ -86,7 +90,7 @@ export default function Navbar() {
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
                 className={`block transition-colors text-base py-2 ${
-                  pathname === link.href
+                  isActive(link.href)
                     ? "text-sunset-orange font-semibold"
                     : "text-sunset-cream/80 hover:text-sunset-gold"
                 }`}

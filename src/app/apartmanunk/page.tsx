@@ -5,7 +5,7 @@ import Gallery from "@/components/Gallery";
 export const metadata: Metadata = {
   title: "Apartmanunk | Sunset Apartment Gárdony",
   description:
-    "Ismerje meg a Sunset Apartment Gárdony-t – történetünket, helyszínünket és a Velencei-tó varázsát.",
+    "Ismerd meg a Sunset Apartment Gárdony-t – történetünket, helyszínünket és a Velencei-tó varázsát.",
 };
 
 export default function Apartmanunk() {
@@ -49,16 +49,16 @@ export default function Apartmanunk() {
 
             <div>
               <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy mb-6">
-                Üdvözöljük a Sunset Apartment-ben
+                Üdvözlünk a Sunset Apartment-ben
               </h2>
               <p className="text-sunset-dark/80 leading-relaxed mb-4">
-                Szeretettel várunk Gárdonyban található, világos és hangulatos tetőtéri lakásunkban, amely ideális választás családoknak, baráti társaságoknak, de akár hosszabb tartózkodásra érkezők számára is. A lakás két külön hálószobával, egy fürdőszobával, nappalival és jól felszerelt konyhával rendelkezik, így akár hat fő elhelyezését is biztosítja.
+                Szeretettel várunk Gárdonyban található, világos és hangulatos tetőtéri lakásunkban, amely ideális választás családoknak, baráti társaságoknak, de akár hosszabb tartózkodásra érkezők számára is. A lakás két külön hálószobával, egy fürdőszobával, nappalival és jól felszerelt konyhával rendelkezik, így akár négy-hat fő elhelyezését is biztosítja.
               </p>
               <p className="text-sunset-dark/80 leading-relaxed mb-4">
                 A tetőtéri elhelyezkedésnek köszönhetően a lakást körberagyogja a nap a napfelkeltétől napnyugtáig, ami igazán kellemes, otthonos hangulatot teremt. A nyári melegben a komfortodról ingyenesen biztosított légkondicionálás gondoskodik 25°C felett, és a napvédő roló is lehúzható az ablakon. A hidegebb hónapokban a központi fűtés garantálja a meleget, illetve a klímával fűteni is lehet. A ház előtt parkolási lehetőség is adott, előzetes egyeztetés alapján akár két autó számára is tudunk helyet biztosítani.
               </p>
               <p className="text-sunset-dark/80 leading-relaxed">
-                A konyhában minden megtalálható, ami egy gyors étkezéshez szükséges: sütő, mikrohullámú sütő, indukciós főzőlap, hűtő, vízforraló, kávéfőző, pirítós sütő és szendvicssütő áll a vendégek rendelkezésére. Ugyanakkor a városban számos kedvező árú, kiváló étterem is elérhető, így akár a főzéssel sem kell foglalkoznod. Okos TV is van a lakásban és wifi használati lehetőség. Az apartmanba lifttel is s lépcsőn is fel lehet jutni. Gyermekeket 9 éves kor felett tudunk fogadni, mert a lakásban is, ahogy a képen is látszik, szintén van egy kis belső lépcsőház.
+                A konyhában minden megtalálható, ami egy gyors étkezéshez szükséges: sütő, mikrohullámú sütő, indukciós főzőlap, hűtő, vízforraló, kávéfőző, pirítós sütő és szendvicssütő áll a vendégek rendelkezésére. Ugyanakkor a városban számos kedvező árú, kiváló étterem is elérhető, így akár a főzéssel sem kell foglalkoznod. Okos TV és wifi használati lehetőség is van a lakásban. Az apartmanba lifttel és lépcsőn is fel lehet jutni. Gyermekeket 9 éves kor felett tudunk fogadni, mert a lakásban is, ahogy a képen is látszik, szintén van egy kis belső lépcsőház.
               </p>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function Apartmanunk() {
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
           <p className="text-center text-sunset-dark/60 mb-10 max-w-xl mx-auto">
-            Kattintson bármelyik képre a nagyobb nézethez – és böngésszen végig az összes fotón.
+            Kattints bármelyik képre a nagyobb nézethez és böngészd végig az összes fotót.
           </p>
           <Gallery />
         </div>
@@ -92,7 +92,7 @@ export default function Apartmanunk() {
               {
                 icon: "🌅",
                 title: "Naplementés Panoráma",
-                desc: "Közvetlen kilátás a tó feletti naplementére minden szobából.",
+                desc: "Közvetlen kilátás a természetre, és a szobákból tó feletti naplementére.",
               },
               {
                 icon: "🌿",
@@ -107,7 +107,7 @@ export default function Apartmanunk() {
               {
                 icon: "❤️",
                 title: "Személyes Kiszolgálás",
-                desc: "Vendégszerető házigazdák, akik mindent megtesznek Önért.",
+                desc: "Vendégszerető házigazdák, akik mindent megtesznek érted.",
               },
             ].map((item, i) => (
               <div
@@ -129,7 +129,7 @@ export default function Apartmanunk() {
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy text-center mb-4">
-            Fedezze Fel a Helyszínt
+            Fedezd Fel a Helyszínt
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-12" />
 
@@ -159,7 +159,7 @@ export default function Apartmanunk() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-4">
-                Hogyan Juthat El Hozzánk?
+                Hogyan Juthatsz El Hozzánk?
               </h3>
 
               <div className="bg-sunset-cream rounded-2xl p-5 mb-6">
@@ -263,50 +263,38 @@ export default function Apartmanunk() {
         </div>
       </section>
 
-      {/* Vendégkönyv */}
+      {/* A Környék */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy mb-4">
-            Vendégkönyv
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
+            A Környék
           </h2>
-          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-8" />
-          <p className="text-sunset-dark/70 mb-10 max-w-2xl mx-auto">
-            Vendégeink élményei és véleményei a szálláshelyről.
+          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
+          <p className="text-sunset-dark/70 text-center max-w-3xl mx-auto mb-12">
+            A környék számtalan lehetőséget kínál a kikapcsolódásra és feltöltődésre.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             {[
-              {
-                name: "Anna és Péter",
-                text: "Csodálatos naplemente, tökéletes apartman! Biztosan visszatérünk.",
-                date: "2025. augusztus",
-              },
-              {
-                name: "Szabó család",
-                text: "A gyerekek imádták a tó közelségét, a konyha tökéletesen felszerelt volt.",
-                date: "2025. július",
-              },
-              {
-                name: "Márk és barátai",
-                text: "Baráti társaságnak kiváló hely. Reméljük jövőre is jöhetünk!",
-                date: "2025. szeptember",
-              },
-            ].map((review, i) => (
+              { icon: "🏊", label: "Fürdés a Velencei-tóban" },
+              { icon: "🧘", label: "Nyugodt pihenés" },
+              { icon: "🧳", label: "Kirándulás" },
+              { icon: "⛰️", label: "Túrázás" },
+              { icon: "🚴", label: "Kerékpározás a tó körül" },
+              { icon: "🌿", label: "Tiszta vidéki levegő" },
+              { icon: "♨️", label: "Agárdi Gyógy- és Termálfürdő" },
+              { icon: "🎣", label: "Horgászás" },
+              { icon: "🍽️", label: "Gasztronómia" },
+              { icon: "🎭", label: "Programok" },
+            ].map((item, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl p-6 shadow-md border border-sunset-gold/10 text-left"
+                className="bg-sunset-cream rounded-xl p-4 text-center hover:shadow-md transition-shadow"
               >
-                <p className="text-sunset-dark/70 italic mb-4">
-                  &bdquo;{review.text}&rdquo;
-                </p>
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold text-sunset-burgundy text-sm">
-                    {review.name}
-                  </span>
-                  <span className="text-sunset-dark/40 text-xs">
-                    {review.date}
-                  </span>
-                </div>
+                <span className="text-3xl block mb-2">{item.icon}</span>
+                <span className="text-sunset-dark/70 text-sm font-medium">
+                  {item.label}
+                </span>
               </div>
             ))}
           </div>
@@ -317,10 +305,10 @@ export default function Apartmanunk() {
       <section className="py-16 sunset-gradient">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-4">
-            Készen áll a feltöltődésre?
+            Készen állsz a feltöltődésre?
           </h2>
           <p className="text-white/80 text-lg mb-8">
-            Foglaljon most és fedezze fel a Velencei-tó legszebb naplementéit!
+            Foglalj most és fedezd fel a Velencei-tó legszebb naplementéit!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

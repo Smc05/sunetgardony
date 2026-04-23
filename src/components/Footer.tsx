@@ -4,6 +4,7 @@ import Image from "@/components/AppImage";
 const footerLinks = [
   { href: "/", label: "Kezdőlap" },
   { href: "/apartmanunk", label: "Apartmanunk" },
+  { href: "/araink", label: "Áraink" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 

@@ -92,7 +92,7 @@ export default function Home() {
               </h3>
               <p className="text-sunset-dark/70">
                 Biciklitúra a tó körül, vitorlázás, úszás a tóban, és még sok
-                más sporttevékenység vár Önre.
+                más sporttevékenység vár rád.
               </p>
             </div>
           </div>
@@ -140,38 +140,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* A Környék */}
+      {/* Vendégkönyv */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
-            A Környék
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy mb-4">
+            Vendégkönyv
           </h2>
-          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
-          <p className="text-sunset-dark/70 text-center max-w-3xl mx-auto mb-12">
-            A környék számtalan lehetőséget kínál a kikapcsolódásra és feltöltődésre.
+          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-8" />
+          <p className="text-sunset-dark/70 mb-10 max-w-2xl mx-auto">
+            Vendégeink élményei és véleményei a szálláshelyről.
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { icon: "🏊", label: "Fürdés a Velencei-tóban" },
-              { icon: "🧘", label: "Nyugodt pihenés" },
-              { icon: "🧳", label: "Kirándulás" },
-              { icon: "⛰️", label: "Túrázás" },
-              { icon: "🚴", label: "Kerékpározás a tó körül" },
-              { icon: "🌿", label: "Tiszta vidéki levegő" },
-              { icon: "♨️", label: "Agárdi Gyógy- és Termálfürdő" },
-              { icon: "🎣", label: "Horgászás" },
-              { icon: "🍽️", label: "Gasztronómia" },
-              { icon: "🎭", label: "Programok" },
-            ].map((item, i) => (
+              {
+                name: "Anna és Péter",
+                text: "Csodálatos naplemente, tökéletes apartman! Biztosan visszatérünk.",
+                date: "2025. augusztus",
+              },
+              {
+                name: "Szabó család",
+                text: "A gyerekek imádták a tó közelségét, a konyha tökéletesen felszerelt volt.",
+                date: "2025. július",
+              },
+              {
+                name: "Márk és barátai",
+                text: "Baráti társaságnak kiváló hely. Reméljük jövőre is jöhetünk!",
+                date: "2025. szeptember",
+              },
+            ].map((review, i) => (
               <div
                 key={i}
-                className="bg-sunset-cream rounded-xl p-4 text-center hover:shadow-md transition-shadow"
+                className="bg-white rounded-2xl p-6 shadow-md border border-sunset-gold/10 text-left"
               >
-                <span className="text-3xl block mb-2">{item.icon}</span>
-                <span className="text-sunset-dark/70 text-sm font-medium">
-                  {item.label}
-                </span>
+                <p className="text-sunset-dark/70 italic mb-4">
+                  &bdquo;{review.text}&rdquo;
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold text-sunset-burgundy text-sm">
+                    {review.name}
+                  </span>
+                  <span className="text-sunset-dark/40 text-xs">
+                    {review.date}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
