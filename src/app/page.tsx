@@ -140,6 +140,66 @@ export default function Home() {
         </div>
       </section>
 
+      {/* A Környék */}
+      <section className="py-20 bg-sunset-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-gold text-center mb-4">
+            A Környék
+          </h2>
+          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
+          <p className="text-sunset-cream/80 text-center mb-12 max-w-2xl mx-auto">
+            A környék számtalan programlehetőséget kínál
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center p-6 bg-sunset-dark/50 rounded-2xl border border-sunset-gold/10">
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-burgundy/30 rounded-full flex items-center justify-center text-3xl">
+                🦉
+              </div>
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-gold mb-2">
+                Nyugodt pihenés
+              </h3>
+              <p className="text-sunset-cream/70">
+                Vadaspark és arborétum
+              </p>
+            </div>
+            <div className="text-center p-6 bg-sunset-dark/50 rounded-2xl border border-sunset-gold/10">
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-burgundy/30 rounded-full flex items-center justify-center text-3xl">
+                🐟
+              </div>
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-gold mb-2">
+                Horgászás
+              </h3>
+              <p className="text-sunset-cream/70">
+                Vízi-világ megfigyelőpont
+              </p>
+            </div>
+            <div className="text-center p-6 bg-sunset-dark/50 rounded-2xl border border-sunset-gold/10">
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-burgundy/30 rounded-full flex items-center justify-center text-3xl">
+                🔭
+              </div>
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-gold mb-2">
+                Kilátó
+              </h3>
+              <p className="text-sunset-cream/70">
+                Bence-hegyi kilátó
+              </p>
+            </div>
+            <div className="text-center p-6 bg-sunset-dark/50 rounded-2xl border border-sunset-gold/10">
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-burgundy/30 rounded-full flex items-center justify-center text-3xl">
+                🛥️
+              </div>
+              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-gold mb-2">
+                Programok
+              </h3>
+              <p className="text-sunset-cream/70">
+                Hajókázás
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Vendégkönyv */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

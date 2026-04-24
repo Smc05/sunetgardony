@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/", label: "Kezdőlap" },
   { href: "/apartmanunk", label: "Apartmanunk" },
   { href: "/araink", label: "Áraink" },
+  { href: "/hazirend", label: "Házirend" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 
