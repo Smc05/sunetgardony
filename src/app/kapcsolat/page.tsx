@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import { MapPin, Phone, Mail, CheckCircle } from "lucide-react";
 
 export default function Kapcsolat() {
   const [formState, setFormState] = useState({
@@ -60,8 +61,8 @@ export default function Kapcsolat() {
 
               <div className="space-y-6 mb-10">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center text-xl shrink-0">
-                    📍
+                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center shrink-0">
+                    <MapPin className="w-6 h-6 text-sunset-orange" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sunset-dark">Cím</h3>
@@ -72,8 +73,8 @@ export default function Kapcsolat() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center text-xl shrink-0">
-                    📞
+                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center shrink-0">
+                    <Phone className="w-6 h-6 text-sunset-orange" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sunset-dark">Telefon</h3>
@@ -87,8 +88,8 @@ export default function Kapcsolat() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center text-xl shrink-0">
-                    ✉️
+                  <div className="w-12 h-12 bg-sunset-light rounded-full flex items-center justify-center shrink-0">
+                    <Mail className="w-6 h-6 text-sunset-orange" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-sunset-dark">E-mail</h3>
@@ -167,7 +168,7 @@ export default function Kapcsolat() {
 
               {submitted ? (
                 <div className="text-center py-12">
-                  <span className="text-5xl block mb-4">✅</span>
+                  <CheckCircle className="w-16 h-16 mx-auto mb-4 text-sunset-orange" />
                   <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
                     Köszönjük az üzeneted!
                   </h3>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Sunset, BedDouble, Users as UsersIcon, Ruler, Check } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Szobák | Sunset Apartment Gárdony",
@@ -6,11 +8,20 @@ export const metadata: Metadata = {
     "Tekintse meg szobáinkat a Sunset Gardony apartmanban – részletes leírás, képek, árak és foglalási lehetőségek.",
 };
 
-const rooms = [
+const rooms: {
+  id: string;
+  name: string;
+  Icon: LucideIcon;
+  capacity: string;
+  size: string;
+  description: string;
+  features: string[];
+  price: string;
+}[] = [
   {
     id: "naplemente-szoba",
     name: "Naplemente Szoba",
-    emoji: "🌅",
+    Icon: Sunset,
     capacity: "2 fő",
     size: "28 m²",
     description:
@@ -30,7 +41,7 @@ const rooms = [
   {
     id: "harmonia-szoba",
     name: "Harmónia Szoba",
-    emoji: "🛏️",
+    Icon: BedDouble,
     capacity: "2-3 fő",
     size: "35 m²",
     description:
@@ -50,7 +61,7 @@ const rooms = [
   {
     id: "familia-szoba",
     name: "Família Szoba",
-    emoji: "👨‍👩‍👧‍👦",
+    Icon: UsersIcon,
     capacity: "4 fő",
     size: "45 m²",
     description:
@@ -102,7 +113,9 @@ export default function Szobak() {
                 }`}
               >
                 <div className="text-center">
-                  <span className="text-7xl block mb-4">{room.emoji}</span>
+                  <div className="w-20 h-20 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                    <room.Icon className="w-10 h-10 text-sunset-orange" />
+                  </div>
                   <p className="text-sunset-burgundy/50 text-sm">
                     Képgaléria helye
                   </p>
@@ -115,8 +128,8 @@ export default function Szobak() {
                   {room.name}
                 </h2>
                 <div className="flex gap-4 mb-4 text-sm text-sunset-dark/60">
-                  <span>👥 {room.capacity}</span>
-                  <span>📐 {room.size}</span>
+                  <span className="flex items-center gap-1"><UsersIcon className="w-4 h-4" /> {room.capacity}</span>
+                  <span className="flex items-center gap-1"><Ruler className="w-4 h-4" /> {room.size}</span>
                 </div>
                 <p className="text-sunset-dark/80 leading-relaxed mb-6">
                   {room.description}
@@ -129,7 +142,7 @@ export default function Szobak() {
                       key={feature}
                       className="flex items-center gap-2 text-sm text-sunset-dark/70"
                     >
-                      <span className="text-sunset-orange">✓</span>
+                      <Check className="w-4 h-4 text-sunset-orange shrink-0" />
                       {feature}
                     </div>
                   ))}

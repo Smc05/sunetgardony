@@ -1,6 +1,30 @@
 import type { Metadata } from "next";
 import Image from "@/components/AppImage";
 import Gallery from "@/components/Gallery";
+import {
+  Sunset,
+  Leaf,
+  BedDouble,
+  Heart,
+  Play,
+  MapPin,
+  Car,
+  TrainFront,
+  Bus,
+  AirVent,
+  Flame,
+  CalendarCheck,
+  SprayCan,
+  Wifi,
+  Shirt,
+  UtensilsCrossed,
+  ParkingCircle,
+  Users,
+  Sofa,
+  Tv,
+  Bike,
+  AppWindow,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Apartmanunk | Sunset Apartment Gárdony",
@@ -90,35 +114,37 @@ export default function Apartmanunk() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                icon: "🌅",
+                Icon: Sunset,
                 title: "Naplementés Panoráma",
                 desc: "Közvetlen kilátás a természetre, és a szobákból tó feletti naplementére.",
               },
               {
-                icon: "🌿",
+                Icon: Leaf,
                 title: "Természetközelség",
                 desc: "Csendes, zöld környezet, távol a városi zajtól.",
               },
               {
-                icon: "🛏️",
+                Icon: BedDouble,
                 title: "Modern Kényelem",
                 desc: "Gondosan berendezett szobák minden kényelemmel.",
               },
               {
-                icon: "❤️",
+                Icon: Heart,
                 title: "Személyes Kiszolgálás",
                 desc: "Vendégszerető házigazdák, akik mindent megtesznek érted.",
               },
-            ].map((item, i) => (
+            ].map(({ Icon, title, desc }, i) => (
               <div
                 key={i}
                 className="p-6 bg-sunset-cream rounded-2xl text-center hover:shadow-lg transition-shadow"
               >
-                <span className="text-4xl block mb-3">{item.icon}</span>
+                <div className="w-14 h-14 mx-auto mb-3 bg-sunset-light rounded-full flex items-center justify-center">
+                  <Icon className="w-7 h-7 text-sunset-orange" />
+                </div>
                 <h3 className="font-[family-name:var(--font-playfair)] text-lg font-semibold text-sunset-burgundy mb-2">
-                  {item.title}
+                  {title}
                 </h3>
-                <p className="text-sunset-dark/60 text-sm">{item.desc}</p>
+                <p className="text-sunset-dark/60 text-sm">{desc}</p>
               </div>
             ))}
           </div>
@@ -136,7 +162,9 @@ export default function Apartmanunk() {
           {/* Placeholder videó */}
           <div className="aspect-video bg-sunset-dark/10 rounded-2xl flex items-center justify-center">
             <div className="text-center">
-              <span className="text-6xl block mb-4">🎬</span>
+              <div className="w-20 h-20 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                <Play className="w-10 h-10 text-sunset-orange" />
+              </div>
               <p className="text-sunset-dark/50">
                 Videó a helyszínről és a naplementéről
               </p>
@@ -164,7 +192,9 @@ export default function Apartmanunk() {
 
               <div className="bg-sunset-cream rounded-2xl p-5 mb-6">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">📍</span>
+                  <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center">
+                    <MapPin className="w-5 h-5 text-sunset-orange" />
+                  </div>
                   <div>
                     <p className="font-semibold text-sunset-dark">Pontos cím</p>
                     <p className="text-sunset-orange font-medium">
@@ -176,7 +206,9 @@ export default function Apartmanunk() {
 
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">🚗</span>
+                  <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center">
+                    <Car className="w-5 h-5 text-sunset-orange" />
+                  </div>
                   <div>
                     <p className="font-semibold text-sunset-dark">Autóval</p>
                     <p className="text-sunset-dark/60 text-sm">
@@ -187,7 +219,9 @@ export default function Apartmanunk() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">🚂</span>
+                  <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center">
+                    <TrainFront className="w-5 h-5 text-sunset-orange" />
+                  </div>
                   <div>
                     <p className="font-semibold text-sunset-dark">Vonattal</p>
                     <p className="text-sunset-dark/60 text-sm">
@@ -196,7 +230,9 @@ export default function Apartmanunk() {
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-2xl">🚌</span>
+                  <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center">
+                    <Bus className="w-5 h-5 text-sunset-orange" />
+                  </div>
                   <div>
                     <p className="font-semibold text-sunset-dark">Busszal</p>
                     <p className="text-sunset-dark/60 text-sm">
@@ -232,30 +268,32 @@ export default function Apartmanunk() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { icon: "❄️", title: "Hűtő-fűtő klíma", desc: "Hűtés és fűtés egész évben" },
-              { icon: "🔥", title: "Radiátor", desc: "Központi fűtés" },
-              { icon: "🍃", title: "4 évszakos szálláshely", desc: "Egész évben nyitva" },
-              { icon: "🧼", title: "Alapvető kellékek", desc: "Szappan, wc-papír, mosogatószer, szivacs, törlőkendő" },
-              { icon: "📶", title: "Ingyenes WiFi", desc: "Gyors, megbízható internet" },
-              { icon: "🛏️", title: "Ágynemű & törölköző", desc: "Személyenként 1-1 törölköző, kéztörlő és ágynemű nagypárnával" },
-              { icon: "🍳", title: "Felszerelt konyha", desc: "Hűtő, indukciós főzőlap, sütő, mikró, vízforraló, kávéfőző, pirítós, melegszendvics sütő" },
-              { icon: "🎫", title: "Ingyenes parkolás", desc: "Ingyenes parkolási lehetőség a szálláshelyen" },
-              { icon: "👥", title: "4-6 személyes", desc: "4-6 személy részére kényelmes, a kanapé a nappaliban kinyitható + 2 fő részére" },
-              { icon: "🛋️", title: "140-es kanapé", desc: "Kinyitható kanapéágy" },
-              { icon: "📺", title: "Full HD okos TV", desc: "Smart TV streaming lehetőséggel" },
-              { icon: "🚲", title: "Kerékpár tároló", desc: "Biztonságos kerékpár tárolási lehetőség" },
-              { icon: "🪟", title: "Ablakok", desc: "Szúnyoghálóval, sötétítő rolóval ellátott ablakok" },
-            ].map((item, i) => (
+              { Icon: AirVent, title: "Hűtő-fűtő klíma", desc: "Hűtés és fűtés egész évben" },
+              { Icon: Flame, title: "Radiátor", desc: "Központi fűtés" },
+              { Icon: CalendarCheck, title: "4 évszakos szálláshely", desc: "Egész évben nyitva" },
+              { Icon: SprayCan, title: "Alapvető kellékek", desc: "Szappan, wc-papír, mosogatószer, szivacs, törlőkendő" },
+              { Icon: Wifi, title: "Ingyenes WiFi", desc: "Gyors, megbízható internet" },
+              { Icon: Shirt, title: "Ágynemű & törölköző", desc: "Személyenként 1-1 törölköző, kéztörlő és ágynemű nagypárnával" },
+              { Icon: UtensilsCrossed, title: "Felszerelt konyha", desc: "Hűtő, indukciós főzőlap, sütő, mikró, vízforraló, kávéfőző, pirítós, melegszendvics sütő" },
+              { Icon: ParkingCircle, title: "Ingyenes parkolás", desc: "Ingyenes parkolási lehetőség a szálláshelyen" },
+              { Icon: Users, title: "4-6 személyes", desc: "4-6 személy részére kényelmes, a kanapé a nappaliban kinyitható + 2 fő részére" },
+              { Icon: Sofa, title: "140-es kanapé", desc: "Kinyitható kanapéágy" },
+              { Icon: Tv, title: "Full HD okos TV", desc: "Smart TV streaming lehetőséggel" },
+              { Icon: Bike, title: "Kerékpár tároló", desc: "Biztonságos kerékpár tárolási lehetőség" },
+              { Icon: AppWindow, title: "Ablakok", desc: "Szúnyoghálóval, sötétítő rolóval ellátott ablakok" },
+            ].map(({ Icon, title, desc }, i) => (
               <div
                 key={i}
                 className="bg-white rounded-2xl p-5 text-center hover:shadow-lg transition-shadow border border-sunset-gold/10"
               >
-                <span className="text-3xl block mb-2">{item.icon}</span>
+                <div className="w-12 h-12 mx-auto mb-2 bg-sunset-light rounded-full flex items-center justify-center">
+                  <Icon className="w-6 h-6 text-sunset-orange" />
+                </div>
                 <h3 className="font-semibold text-sunset-burgundy text-sm mb-1">
-                  {item.title}
+                  {title}
                 </h3>
                 <p className="text-sunset-dark/50 text-xs leading-relaxed">
-                  {item.desc}
+                  {desc}
                 </p>
               </div>
             ))}

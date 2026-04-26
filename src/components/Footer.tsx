@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "@/components/AppImage";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const footerLinks = [
   { href: "/", label: "Kezdőlap" },
@@ -99,9 +100,9 @@ export default function Footer() {
               Kapcsolat
             </h3>
             <div className="space-y-2 text-sm">
-              <p>📍 2483 Gárdony, Körösi Csoma Sándor tér 3.</p>
-              <p>📞 +36 20 534 9739</p>
-              <p>✉️ sunset.gardony@gmail.com</p>
+              <p className="flex items-center gap-2"><MapPin className="w-4 h-4 shrink-0 text-sunset-gold/70" /> 2483 Gárdony, Körösi Csoma Sándor tér 3.</p>
+              <p className="flex items-center gap-2"><Phone className="w-4 h-4 shrink-0 text-sunset-gold/70" /> +36 20 534 9739</p>
+              <p className="flex items-center gap-2"><Mail className="w-4 h-4 shrink-0 text-sunset-gold/70" /> sunset.gardony@gmail.com</p>
             </div>
             <div className="flex gap-3 mt-4">
               {socialLinks.map((social) => (

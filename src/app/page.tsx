@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "@/components/AppImage";
+import { Waves, Flame, Bike } from "lucide-react";
 
 export default function Home() {
   return (
@@ -63,8 +64,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                🌊
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                <Waves className="w-8 h-8 text-sunset-orange" />
               </div>
               <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
                 Velencei-tó Közelsége
@@ -75,8 +76,8 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-6">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                ♨️
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                <Flame className="w-8 h-8 text-sunset-orange" />
               </div>
               <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
                 Agárdi Termálfürdő
@@ -87,8 +88,8 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-6">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                �
+              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                <Bike className="w-8 h-8 text-sunset-orange" />
               </div>
               <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
                 Kikapcsolódási Lehetőségek

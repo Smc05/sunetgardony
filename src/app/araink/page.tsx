@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Banknote } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Áraink | Sunset Apartment Gárdony",
@@ -25,7 +26,9 @@ export default function Araink() {
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl p-10 shadow-xl border border-sunset-gold/10">
-            <span className="text-5xl block mb-6">💰</span>
+            <div className="w-20 h-20 mx-auto mb-6 bg-sunset-light rounded-full flex items-center justify-center">
+              <Banknote className="w-10 h-10 text-sunset-orange" />
+            </div>
             <h2 className="font-[family-name:var(--font-playfair)] text-2xl sm:text-3xl font-bold text-sunset-burgundy mb-6">
               Áraink nem egységesek
             </h2>
