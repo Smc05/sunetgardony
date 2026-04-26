@@ -16,14 +16,14 @@ import {
   CalendarCheck,
   SprayCan,
   Wifi,
-  Shirt,
+  Layers,
   UtensilsCrossed,
   ParkingCircle,
   Users,
   Sofa,
   Tv,
   Bike,
-  AppWindow,
+  LayoutGrid,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -273,14 +273,14 @@ export default function Apartmanunk() {
               { Icon: CalendarCheck, title: "4 évszakos szálláshely", desc: "Egész évben nyitva" },
               { Icon: SprayCan, title: "Alapvető kellékek", desc: "Szappan, wc-papír, mosogatószer, szivacs, törlőkendő" },
               { Icon: Wifi, title: "Ingyenes WiFi", desc: "Gyors, megbízható internet" },
-              { Icon: Shirt, title: "Ágynemű & törölköző", desc: "Személyenként 1-1 törölköző, kéztörlő és ágynemű nagypárnával" },
+              { Icon: Layers, title: "Ágynemű & törölköző", desc: "Személyenként 1-1 törölköző, kéztörlő és ágynemű nagypárnával" },
               { Icon: UtensilsCrossed, title: "Felszerelt konyha", desc: "Hűtő, indukciós főzőlap, sütő, mikró, vízforraló, kávéfőző, pirítós, melegszendvics sütő" },
               { Icon: ParkingCircle, title: "Ingyenes parkolás", desc: "Ingyenes parkolási lehetőség a szálláshelyen" },
               { Icon: Users, title: "4-6 személyes", desc: "4-6 személy részére kényelmes, a kanapé a nappaliban kinyitható + 2 fő részére" },
               { Icon: Sofa, title: "140-es kanapé", desc: "Kinyitható kanapéágy" },
               { Icon: Tv, title: "Full HD okos TV", desc: "Smart TV streaming lehetőséggel" },
               { Icon: Bike, title: "Kerékpár tároló", desc: "Biztonságos kerékpár tárolási lehetőség" },
-              { Icon: AppWindow, title: "Ablakok", desc: "Szúnyoghálóval, sötétítő rolóval ellátott ablakok" },
+              { Icon: LayoutGrid, title: "Ablakok", desc: "Szúnyoghálóval, sötétítő rolóval ellátott ablakok" },
             ].map(({ Icon, title, desc }, i) => (
               <div
                 key={i}

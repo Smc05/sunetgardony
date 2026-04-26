@@ -3,13 +3,14 @@ import Link from "next/link";
 import Image from "@/components/AppImage";
 import {
   Waves,
-  Wind,
-  Backpack,
+  Moon,
+  Compass,
   Mountain,
   Bike,
   Leaf,
   Flame,
-  Fish,
+  Sailboat,
+  Anchor,
   Utensils,
   Landmark,
   TreePine,
@@ -56,13 +57,13 @@ export default function Programok() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
             {[
               { Icon: Waves, label: "Fürdés a Velencei-tóban" },
-              { Icon: Wind, label: "Nyugodt pihenés" },
-              { Icon: Backpack, label: "Kirándulás" },
+              { Icon: Moon, label: "Nyugodt pihenés" },
+              { Icon: Compass, label: "Kirándulás" },
               { Icon: Mountain, label: "Túrázás" },
               { Icon: Bike, label: "Kerékpározás a tó körül" },
               { Icon: Leaf, label: "Tiszta vidéki levegő" },
               { Icon: Flame, label: "Agárdi Gyógy- és Termálfürdő" },
-              { Icon: Fish, label: "Horgászás" },
+              { Icon: Sailboat, label: "Vitorlázás / SUP" },
               { Icon: Utensils, label: "Gasztronómia" },
               { Icon: Landmark, label: "Kulturális programok" },
             ].map(({ Icon, label }, i) => (
@@ -81,7 +82,7 @@ export default function Programok() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { Icon: TreePine, title: "Természet Közelsége", desc: "Vadaspark és arborétum, ahol a természet közelében töltheted a napot." },
-              { Icon: Fish, title: "Horgászás", desc: "Vízi-világ megfigyelőpont és horgászati lehetőségek a tó partján." },
+              { Icon: Anchor, title: "Horgászás", desc: "Vízi-világ megfigyelőpont és horgászati lehetőségek a tó partján." },
               { Icon: Binoculars, title: "Kilátó", desc: "Bence-hegyi kilátó – lélegzetelállító panoráma a Velencei-tóra." },
               { Icon: Ship, title: "Hajókázás", desc: "Hajókirándulás a Velencei-tavon, felejthetetlen élmény az egész családnak." },
             ].map(({ Icon, title, desc }, i) => (
@@ -124,6 +125,9 @@ export default function Programok() {
               { src: "/assets/images/programok/1777210804803.jpg", label: "Nyári lúdcsalád szoborcsoport" },
               { src: "/assets/images/programok/1777210804824.jpg", label: "Agárdi Gyógy- és Termálfürdő" },
               { src: "/assets/images/programok/1777210804844.jpg", label: "Pálinkafőzde" },
+              { src: "/assets/images/programok/1777230260249.jpg", label: "Dinnyés kilátó" },
+              { src: "/assets/images/programok/1777230860563.jpg", label: "Gárdonyi Géza emlékház" },
+              { src: "/assets/images/programok/facebook_1777232311359_7454252592463328198.jpg", label: "Agárdi kikötő" },
             ].map((item, i) => (
               <div key={i} className="overflow-hidden rounded-xl group">
                 <div className="aspect-[4/3] relative">
