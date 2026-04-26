@@ -1,6 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "@/components/AppImage";
+import {
+  Waves,
+  Wind,
+  Backpack,
+  Mountain,
+  Bike,
+  Leaf,
+  Flame,
+  Fish,
+  Utensils,
+  Landmark,
+  TreePine,
+  Binoculars,
+  Ship,
+  Wine,
+  ExternalLink,
+  Sun,
+  Snowflake,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Programok és Események | Sunset Apartment Gárdony",
@@ -36,74 +55,46 @@ export default function Programok() {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
             {[
-              { icon: "🏊", label: "Fürdés a Velencei-tóban" },
-              { icon: "🧘", label: "Nyugodt pihenés" },
-              { icon: "🧳", label: "Kirándulás" },
-              { icon: "⛰️", label: "Túrázás" },
-              { icon: "🚴", label: "Kerékpározás a tó körül" },
-              { icon: "🌿", label: "Tiszta vidéki levegő" },
-              { icon: "♨️", label: "Agárdi Gyógy- és Termálfürdő" },
-              { icon: "🎣", label: "Horgászás" },
-              { icon: "🍽️", label: "Gasztronómia" },
-              { icon: "🎭", label: "Kulturális programok" },
-            ].map((item, i) => (
+              { Icon: Waves, label: "Fürdés a Velencei-tóban" },
+              { Icon: Wind, label: "Nyugodt pihenés" },
+              { Icon: Backpack, label: "Kirándulás" },
+              { Icon: Mountain, label: "Túrázás" },
+              { Icon: Bike, label: "Kerékpározás a tó körül" },
+              { Icon: Leaf, label: "Tiszta vidéki levegő" },
+              { Icon: Flame, label: "Agárdi Gyógy- és Termálfürdő" },
+              { Icon: Fish, label: "Horgászás" },
+              { Icon: Utensils, label: "Gasztronómia" },
+              { Icon: Landmark, label: "Kulturális programok" },
+            ].map(({ Icon, label }, i) => (
               <div
                 key={i}
                 className="bg-white rounded-xl p-4 text-center hover:shadow-md transition-shadow"
               >
-                <span className="text-3xl block mb-2">{item.icon}</span>
+                <Icon className="w-8 h-8 mx-auto mb-2 text-sunset-orange" />
                 <span className="text-sunset-dark/70 text-sm font-medium">
-                  {item.label}
+                  {label}
                 </span>
               </div>
             ))}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                🦉
+            {[
+              { Icon: TreePine, title: "Természet Közelsége", desc: "Vadaspark és arborétum, ahol a természet közelében töltheted a napot." },
+              { Icon: Fish, title: "Horgászás", desc: "Vízi-világ megfigyelőpont és horgászati lehetőségek a tó partján." },
+              { Icon: Binoculars, title: "Kilátó", desc: "Bence-hegyi kilátó – lélegzetelállító panoráma a Velencei-tóra." },
+              { Icon: Ship, title: "Hajókázás", desc: "Hajókirándulás a Velencei-tavon, felejthetetlen élmény az egész családnak." },
+            ].map(({ Icon, title, desc }, i) => (
+              <div key={i} className="text-center p-6 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg transition-shadow">
+                <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
+                  <Icon className="w-8 h-8 text-sunset-orange" />
+                </div>
+                <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
+                  {title}
+                </h3>
+                <p className="text-sunset-dark/70">{desc}</p>
               </div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
-                Természet Közelsége
-              </h3>
-              <p className="text-sunset-dark/70">
-                Vadaspark és arborétum, ahol a természet közelében töltheted a napot.
-              </p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                🐟
-              </div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
-                Horgászás
-              </h3>
-              <p className="text-sunset-dark/70">
-                Vízi-világ megfigyelőpont és horgászati lehetőségek a tó partján.
-              </p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                🔭
-              </div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
-                Kilátó
-              </h3>
-              <p className="text-sunset-dark/70">
-                Bence-hegyi kilátó – lélegzetelállító panoráma a Velencei-tóra.
-              </p>
-            </div>
-            <div className="text-center p-6 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg transition-shadow">
-              <div className="w-16 h-16 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center text-3xl">
-                🛥️
-              </div>
-              <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-burgundy mb-2">
-                Hajókázás
-              </h3>
-              <p className="text-sunset-dark/70">
-                Hajókirándulás a Velencei-tavon, felejthetetlen élmény az egész családnak.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -165,8 +156,8 @@ export default function Programok() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-sunset-cream rounded-2xl p-8">
-              <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold text-sunset-burgundy mb-4">
-                ☀️ Tavasz / Nyár
+              <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold text-sunset-burgundy mb-4 flex items-center gap-2">
+                <Sun className="w-6 h-6 text-sunset-orange shrink-0" /> Tavasz / Nyár
               </h3>
               <ul className="space-y-3 text-sunset-dark/70">
                 <li className="flex items-start gap-2">
@@ -192,8 +183,8 @@ export default function Programok() {
               </ul>
             </div>
             <div className="bg-sunset-cream rounded-2xl p-8">
-              <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold text-sunset-burgundy mb-4">
-                🍂 Ősz / Tél
+              <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-semibold text-sunset-burgundy mb-4 flex items-center gap-2">
+                <Snowflake className="w-6 h-6 text-sunset-orange shrink-0" /> Ősz / Tél
               </h3>
               <ul className="space-y-3 text-sunset-dark/70">
                 <li className="flex items-start gap-2">
@@ -232,46 +223,22 @@ export default function Programok() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              {
-                icon: "♨️",
-                title: "Agárdi Gyógy- és Termálfürdő",
-                desc: "Sétatávolságra a szálláshelytől. Gyógymedencék, élményfürdő, szaunák és wellness szolgáltatások egész évben.",
-              },
-              {
-                icon: "🌊",
-                title: "Velencei-tó Strandok",
-                desc: "A tó partján számos strand vár – családoknak és sportolóknak egyaránt ideális helyszín a nyári kikapcsolódásra.",
-              },
-              {
-                icon: "🔭",
-                title: "Bence-hegyi Kilátó",
-                desc: "Panorámás kilátás a Velencei-tóra és a környező hegyekre. Rövid, könnyű túrával elérhető.",
-              },
-              {
-                icon: "🦉",
-                title: "Vadaspark és Arborétum",
-                desc: "Természetközeli élmény az egész családnak – állatpark, séta- és pihenőhelyek a zöldben.",
-              },
-              {
-                icon: "🚴",
-                title: "Kerékpárút a Tó Körül",
-                desc: "A tó körüli kerékpárút kiváló lehetőség az aktív pihenésre, gyönyörű természeti környezetben.",
-              },
-              {
-                icon: "🍷",
-                title: "Gasztronómia és Borok",
-                desc: "Helyi éttermek, borkóstolók és piacok – fedezd fel a Velencei-tó környékének ízvilágát.",
-              },
-            ].map((item, i) => (
+              { Icon: Flame, title: "Agárdi Gyógy- és Termálfürdő", desc: "Sétatávolságra a szálláshelytől. Gyógymedencék, élményfürdő, szaunák és wellness szolgáltatások egész évben." },
+              { Icon: Waves, title: "Velencei-tó Strandok", desc: "A tó partján számos strand vár – családoknak és sportolóknak egyaránt ideális helyszín a nyári kikapcsolódásra." },
+              { Icon: Binoculars, title: "Bence-hegyi Kilátó", desc: "Panorámás kilátás a Velencei-tóra és a környező hegyekre. Rövid, könnyű túrával elérhető." },
+              { Icon: TreePine, title: "Vadaspark és Arborétum", desc: "Természetközeli élmény az egész családnak – állatpark, séta- és pihenőhelyek a zöldben." },
+              { Icon: Bike, title: "Kerékpárút a Tó Körül", desc: "A tó körüli kerékpárút kiváló lehetőség az aktív pihenésre, gyönyörű természeti környezetben." },
+              { Icon: Wine, title: "Gasztronómia és Borok", desc: "Helyi éttermek, borkóstolók és piacok – fedezd fel a Velencei-tó környékének ízvilágát." },
+            ].map(({ Icon, title, desc }, i) => (
               <div
                 key={i}
                 className="p-6 bg-sunset-dark/50 rounded-2xl border border-sunset-gold/10"
               >
-                <span className="text-4xl block mb-3">{item.icon}</span>
+                <Icon className="w-10 h-10 mb-3 text-sunset-gold" />
                 <h3 className="font-[family-name:var(--font-playfair)] text-xl font-semibold text-sunset-gold mb-2">
-                  {item.title}
+                  {title}
                 </h3>
-                <p className="text-sunset-cream/70">{item.desc}</p>
+                <p className="text-sunset-cream/70">{desc}</p>
               </div>
             ))}
           </div>
@@ -344,8 +311,8 @@ export default function Programok() {
                 rel="noopener noreferrer"
                 className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-sunset-gold/10 hover:shadow-lg hover:border-sunset-orange/30 transition-all group"
               >
-                <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center text-xl group-hover:bg-sunset-orange/20 transition-colors">
-                  🔗
+                <div className="w-10 h-10 shrink-0 bg-sunset-light rounded-full flex items-center justify-center group-hover:bg-sunset-orange/20 transition-colors">
+                  <ExternalLink className="w-5 h-5 text-sunset-orange" />
                 </div>
                 <div>
                   <h3 className="font-semibold text-sunset-burgundy group-hover:text-sunset-orange transition-colors mb-1">
