@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Sunset Apartment Gárdony | Apartman a Velencei-tó partján",
   description:
-    "Csodáld meg a Velencei-tó legszebb naplementéit a romantikus tetőtéri apartmanunkból. Foglaljon most!",
+    "Csodáld meg a Velencei-tó legszebb naplementéit a romantikus tetőtéri apartmanunkból. Foglalj most!",
   keywords:
     "szálláshely, Velencei-tó, naplemente, romantikus, apartman, Gárdony",
   icons: {

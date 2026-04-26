@@ -294,7 +294,7 @@ export default function Kapcsolat() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy text-center mb-4">
-            Hol Találhat Meg?
+            Hol Találsz Meg Minket?
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-12" />
 
@@ -315,10 +315,10 @@ export default function Kapcsolat() {
       <section className="py-16 sunset-gradient">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-white mb-4">
-            Várjuk szeretettel!
+            Várunk szeretettel!
           </h2>
           <p className="text-white/80 text-lg mb-8">
-            Foglaljon most és élvezze a Velencei-tó legszebb naplementéit!
+            Foglalj most és élvezd a Velencei-tó csodás naplementéit!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
