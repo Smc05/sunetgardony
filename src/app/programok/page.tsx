@@ -305,6 +305,26 @@ export default function Programok() {
                 href: "https://www.velencei-to.hu/",
                 title: "Velencei-tó – Hivatalos portál",
                 desc: "A Velencei-tó régió hivatalos weboldala: látnivalók, szállás, programok és hasznos információk egy helyen.",
+              },
+              {
+                href: "https://www.programturizmus.hu/ajanlat-agardi-programok.html",
+                title: "Programturizmus – Agárdi programok",
+                desc: "Agárd legjobb programajánlatai: élmények, kirándulások és aktív szabadidős lehetőségek.",
+              },
+              {
+                href: "https://www.programturizmus.hu/ajanlat-gardonyi-programok.html",
+                title: "Programturizmus – Gárdonyi programok",
+                desc: "Gárdony környékének legjobb programjai és élményei – tökéletes kiegészítő a tartózkodáshoz.",
+              },
+              {
+                href: "https://www.termalfurdo.hu/furdozes/a-velencei-to-legjobb-strandjai-6368",
+                title: "A Velencei-tó legjobb strandjai",
+                desc: "Összefoglaló a Velencei-tó legszebb és legnépszerűbb strandjairól – válaszd ki a kedvencet!",
+              },
+              {
+                href: "https://www.termalfurdo.hu/furdo/agardi-gyogy-es-termalfurdo-60",
+                title: "Agárdi Gyógy- és Termálfürdő",
+                desc: "Részletes leírás az apartmantól sétatávolságra lévő termálfürdőről: medencék, nyitvatartás, árak.",
               }
             ].map((link, i) => (
               <a
