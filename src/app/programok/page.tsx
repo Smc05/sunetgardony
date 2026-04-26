@@ -115,14 +115,24 @@ export default function Programok() {
             Képek a Környékről
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-10" />
+          <div className="mb-4">
+            <div className="aspect-[16/7] relative overflow-hidden rounded-2xl group">
+              <Image
+                src="/assets/images/programok/1777212010961.jpg"
+                alt="A Velencei-tó környéke"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="100vw"
+              />
+            </div>
+          </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
             {[
-              { src: "/assets/images/programok/1777210804762.jpg", label: "Agárdi Gyógy- és Termálfürdő" },
+              { src: "/assets/images/programok/1777210804762.jpg", label: "Vidra szobor" },
               { src: "/assets/images/programok/1777210804783.jpg", label: "Napsugár strand" },
               { src: "/assets/images/programok/1777210804803.jpg", label: "Nyári lúdcsalád szoborcsoport" },
-              { src: "/assets/images/programok/1777210804824.jpg", label: "Vidra szobor" },
+              { src: "/assets/images/programok/1777210804824.jpg", label: "Agárdi Gyógy- és Termálfürdő" },
               { src: "/assets/images/programok/1777210804844.jpg", label: "Pálinkafőzde" },
-              { src: "/assets/images/programok/1777212010961.jpg", label: null },
             ].map((item, i) => (
               <div key={i} className="overflow-hidden rounded-xl group">
                 <div className="aspect-[4/3] relative">
