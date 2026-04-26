@@ -300,6 +300,11 @@ export default function Programok() {
                 href: "https://ilovevelenceito.hu/",
                 title: "I Love Velencei-tó",
                 desc: "Minden, amit a Velencei-tóról tudni érdemes.",
+              },
+              {
+                href: "https://www.velencei-to.hu/",
+                title: "Velencei-tó – Hivatalos portál",
+                desc: "A Velencei-tó régió hivatalos weboldala: látnivalók, szállás, programok és hasznos információk egy helyen.",
               }
             ].map((link, i) => (
               <a
