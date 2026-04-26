@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 export default function Adatvedelem() {
   return (
     <>
-      <section className="relative pt-28 pb-12 bg-gradient-to-b from-sunset-dark to-sunset-burgundy">
+      <section className="relative pt-28 pb-12 bg-gradient-to-b from-[#C88E33] via-[#EBB358] to-[#F9D189]">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#2D1E10] mb-4">
             Adatvédelmi Tájékoztató
           </h1>
-          <p className="text-sunset-cream/70 text-lg">
+          <p className="text-[#2D1E10]/80 text-lg">
             Hatályos: 2025. január 1-től
           </p>
         </div>

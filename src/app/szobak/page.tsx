@@ -73,12 +73,12 @@ export default function Szobak() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-28 pb-20 bg-gradient-to-b from-sunset-dark to-sunset-burgundy">
+      <section className="relative pt-28 pb-20 bg-gradient-to-b from-[#C88E33] via-[#EBB358] to-[#F9D189]">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-white mb-4">
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-5xl font-bold text-[#2D1E10] mb-4">
             Szobáink
           </h1>
-          <p className="text-sunset-cream/70 text-lg max-w-2xl mx-auto">
+          <p className="text-[#2D1E10]/80 text-lg max-w-2xl mx-auto">
             Minden szobánk egyedi hangulatú, gondosan berendezett és a maximális
             kényelmet szolgálja.
           </p>
