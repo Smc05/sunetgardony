@@ -10,22 +10,25 @@ export default function Home() {
           src="/assets/images/1777051526843.jpg"
           alt="Naplemente a Velencei-tó felett"
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
           quality={90}
         />
         <div className="absolute inset-0 hero-gradient" />
 
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div className="absolute top-24 left-0 right-0 z-10 text-center px-4">
           <Image
             src="/assets/logo/logo-t-bg.png"
             alt="Sunset Apartment Gárdony"
             width={280}
             height={280}
-            className="mx-auto mb-6"
+            className="mx-auto"
             priority
           />
-          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+        </div>
+
+        <div className="absolute bottom-16 left-0 right-0 z-10 text-center px-4">
+          <h1 className="font-[family-name:var(--font-playfair)] text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 mt-32 leading-tight">
             Sunset Apartment Gárdony
           </h1>
           <p className="font-[family-name:var(--font-playfair)] text-xl sm:text-2xl text-sunset-cream/90 mb-10 italic max-w-3xl mx-auto">
@@ -109,10 +112,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "/assets/images/839688042.jpg",
-              "/assets/images/839687937.jpg",
-              "/assets/images/839688297.jpg",
-              "/assets/images/839687636.jpg",
+              "/assets/images/gallery/839688042.jpg",
+              "/assets/images/gallery/839687937.jpg",
+              "/assets/images/gallery/839688297.jpg",
+              "/assets/images/gallery/839687636.jpg",
             ].map((src, i) => (
               <div
                 key={i}

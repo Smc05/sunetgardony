@@ -30,10 +30,10 @@ export default function Apartmanunk() {
             {/* Képek az Apartmanról */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                "/assets/images/839688042.jpg",
-                "/assets/images/839687937.jpg",
-                "/assets/images/839688297.jpg",
-                "/assets/images/839687636.jpg",
+                "/assets/images/gallery/839688042.jpg",
+                "/assets/images/gallery/839687937.jpg",
+                "/assets/images/gallery/839688297.jpg",
+                "/assets/images/gallery/839687636.jpg",
               ].map((src, i) => (
                 <div key={i} className="aspect-[4/3] relative overflow-hidden rounded-xl">
                   <Image

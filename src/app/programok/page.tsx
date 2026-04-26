@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "@/components/AppImage";
 
 export const metadata: Metadata = {
   title: "Programok és Események | Sunset Apartment Gárdony",
@@ -103,6 +104,43 @@ export default function Programok() {
                 Hajókirándulás a Velencei-tavon, felejthetetlen élmény az egész családnak.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Fotók a környékről */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
+            Képek a Környékről
+          </h2>
+          <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-10" />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+            {[
+              { src: "/assets/images/programok/1777210804762.jpg", label: "Agárdi Gyógy- és Termálfürdő" },
+              { src: "/assets/images/programok/1777210804783.jpg", label: "Napsugár strand" },
+              { src: "/assets/images/programok/1777210804803.jpg", label: "Nyári lúdcsalád szoborcsoport" },
+              { src: "/assets/images/programok/1777210804824.jpg", label: "Vidra szobor" },
+              { src: "/assets/images/programok/1777210804844.jpg", label: "Pálinkafőzde" },
+              { src: "/assets/images/programok/1777212010961.jpg", label: null },
+            ].map((item, i) => (
+              <div key={i} className="overflow-hidden rounded-xl group">
+                <div className="aspect-[4/3] relative">
+                  <Image
+                    src={item.src}
+                    alt={item.label ?? `A Velencei-tó környéke – ${i + 1}. kép`}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                </div>
+                {item.label && (
+                  <p className="text-center text-sunset-dark/70 text-sm font-medium py-2 px-1">
+                    {item.label}
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -249,11 +287,6 @@ export default function Programok() {
                 desc: "Hajókirándulások és menetrendek a Velencei-tavon.",
               },
               {
-                href: "https://hellovelence.hu/hu/products/7/latnivalok",
-                title: "Hello Velence – Látnivalók",
-                desc: "A környék legjobb látnivalóinak gyűjteménye.",
-              },
-              {
                 href: "https://www.velenceturizmus.hu/Programok",
                 title: "Velence Turizmus – Programok",
                 desc: "Aktuális programok és események Velencén.",
@@ -264,20 +297,10 @@ export default function Programok() {
                 desc: "Programajánló a Velencei-tó térségéből.",
               },
               {
-                href: "https://www.velenceitonal.hu/szolgaltatok/programok",
-                title: "Velencei-tónál – Programok",
-                desc: "Szolgáltatók és programszervezők a tó környékén.",
-              },
-              {
                 href: "https://ilovevelenceito.hu/",
                 title: "I Love Velencei-tó",
                 desc: "Minden, amit a Velencei-tóról tudni érdemes.",
-              },
-              {
-                href: "https://velencekorzo.hu/programok_hu.html",
-                title: "Velence Korzó – Programok",
-                desc: "Rendezvények és programok a Velence Korzón.",
-              },
+              }
             ].map((link, i) => (
               <a
                 key={i}
