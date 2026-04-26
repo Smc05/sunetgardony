@@ -39,7 +39,7 @@ export default function Home() {
               href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all shadow-xl hover:shadow-sunset-orange/50 text-lg"
+              className="px-8 py-4 bg-yellow-400 hover:bg-yellow-300 text-sunset-dark font-bold rounded-full transition-all shadow-xl text-lg"
             >
               Foglalás a Booking.com-on
             </a>

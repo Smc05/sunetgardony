@@ -129,7 +129,7 @@ export default function Apartmanunk() {
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy text-center mb-4">
-            Fedezd Fel a Helyszínt
+            Ezt is érdemes megnézni!
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-12" />
 

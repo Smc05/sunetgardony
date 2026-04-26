@@ -59,7 +59,7 @@ export default function Navbar() {
               href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 px-5 py-2 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all shadow-lg hover:shadow-sunset-orange/40 text-sm"
+              className="ml-2 px-5 py-2 bg-yellow-400 hover:bg-yellow-300 text-sunset-dark font-bold rounded-full transition-all shadow-lg text-sm"
             >
               FOGLALÁS
             </a>
@@ -104,7 +104,7 @@ export default function Navbar() {
               href="https://www.booking.com/hotel/hu/sunset-apartment-gardony-for-6-people-with-free-ac-free-parking.hu.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center mt-3 px-5 py-3 bg-sunset-orange hover:bg-sunset-gold text-white font-bold rounded-full transition-all"
+              className="block text-center mt-3 px-5 py-3 bg-yellow-400 hover:bg-yellow-300 text-sunset-dark font-bold rounded-full transition-all"
             >
               FOGLALÁS
             </a>
