@@ -113,10 +113,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              "/assets/images/gallery/839688042.jpg",
-              "/assets/images/gallery/839687937.jpg",
-              "/assets/images/gallery/839688297.jpg",
-              "/assets/images/gallery/839687636.jpg",
+              "/assets/images/gallery/1.jpg",
+              "/assets/images/gallery/2.jpg",
+              "/assets/images/gallery/3.jpg",
+              "/assets/images/gallery/4.jpg",
             ].map((src, i) => (
               <div
                 key={i}

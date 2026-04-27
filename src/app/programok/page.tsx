@@ -47,7 +47,7 @@ export default function Programok() {
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl sm:text-4xl font-bold text-sunset-burgundy text-center mb-4">
-            A Környék
+            Programlehetőségek
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-4" />
           <p className="text-sunset-dark/70 text-center max-w-3xl mx-auto mb-12">

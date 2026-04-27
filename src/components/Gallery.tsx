@@ -4,35 +4,40 @@ import Image from "@/components/AppImage";
 import { useState, useEffect, useCallback } from "react";
 
 const galleryImages = [
-  { src: "/assets/images/gallery/839687427.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687491.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687503.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687636.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687657.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687757.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687819.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687884.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687937.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687976.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687981.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687982.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687991.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839687998.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688007.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688033.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688042.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688180.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688195.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688240.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688297.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688298.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688310.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688337.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688364.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688458.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688464.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688498.jpg", alt: "Apartman" },
-  { src: "/assets/images/gallery/839688526.jpg", alt: "Apartman" },
+  { src: "/assets/images/gallery/1.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/2.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/3(1).jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/3.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/4(1).jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/4.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/5.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/6.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/7.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/8.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/9.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/10.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/11.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/12.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/13(1).jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/13.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/14.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/15.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/16.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/17.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/18.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/19.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/20.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/21.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/22.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/23.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/24.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/25.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/26.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/27.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/28.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/29.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/30.jpg", alt: "Sunset Gardony Apartman" },
+  { src: "/assets/images/gallery/31.jpg", alt: "Sunset Gardony Apartman" },
 ];
 
 export default function Gallery() {
@@ -74,7 +79,7 @@ export default function Gallery() {
       {/* Collapsible grid */}
       <div className="relative">
         <div
-          className="columns-2 sm:columns-3 lg:columns-4 gap-3 space-y-3 overflow-hidden"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 overflow-hidden"
           style={{
             maxHeight: isExpanded ? "9999px" : "500px",
             transition: "max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -84,7 +89,7 @@ export default function Gallery() {
           <button
             key={i}
             onClick={() => openLightbox(i)}
-            className="break-inside-avoid block w-full overflow-hidden rounded-xl group cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sunset-gold"
+            className="block w-full overflow-hidden rounded-xl group cursor-zoom-in focus:outline-none focus-visible:ring-2 focus-visible:ring-sunset-gold"
             aria-label={`Kép megtekintése ${i + 1}`}
           >
             <div className="relative w-full overflow-hidden rounded-xl">
