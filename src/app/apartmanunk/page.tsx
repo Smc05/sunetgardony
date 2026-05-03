@@ -54,10 +54,10 @@ export default function Apartmanunk() {
             {/* Képek az Apartmanról */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                "/assets/images/gallery/839688042.jpg",
-                "/assets/images/gallery/839687937.jpg",
-                "/assets/images/gallery/839688297.jpg",
-                "/assets/images/gallery/839687636.jpg",
+                "/assets/images/gallery/10.jpg",
+                "/assets/images/gallery/7.jpg",
+                "/assets/images/gallery/14.jpg",
+                "/assets/images/gallery/9.jpg",
               ].map((src, i) => (
                 <div key={i} className="aspect-[4/3] relative overflow-hidden rounded-xl">
                   <Image
@@ -151,7 +151,7 @@ export default function Apartmanunk() {
         </div>
       </section>
 
-      {/* Videó szekció */}
+      {/* Videó szekció 
       <section className="py-20 bg-sunset-cream">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl font-bold text-sunset-burgundy text-center mb-4">
@@ -159,7 +159,7 @@ export default function Apartmanunk() {
           </h2>
           <div className="w-20 h-1 sunset-gradient mx-auto rounded-full mb-12" />
 
-          {/* Placeholder videó */}
+
           <div className="aspect-video bg-sunset-dark/10 rounded-2xl flex items-center justify-center">
             <div className="text-center">
               <div className="w-20 h-20 mx-auto mb-4 bg-sunset-light rounded-full flex items-center justify-center">
@@ -175,7 +175,7 @@ export default function Apartmanunk() {
           </div>
         </div>
       </section>
-
+        */}
       {/* Térkép */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
