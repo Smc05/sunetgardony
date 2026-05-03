@@ -4,7 +4,7 @@ const isGithubPages = process.env.GITHUB_ACTIONS === "true";
 const basePath = isGithubPages ? "/sunetgardony" : "";
 
 const nextConfig: NextConfig = {
-  output: "export",
+  ...(isGithubPages && { output: "export" }),
   basePath,
   assetPrefix: basePath,
   trailingSlash: true,
