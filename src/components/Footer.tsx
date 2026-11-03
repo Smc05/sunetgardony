@@ -7,6 +7,7 @@ const footerLinks = [
   { href: "/apartmanunk", label: "Apartmanunk" },
   { href: "/araink", label: "Áraink" },
   { href: "/programok", label: "Programok" },
+  { href: "/partnerek", label: "Partnerek" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
 
