@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/apartmanunk", label: "Apartmanunk" },
   { href: "/araink", label: "Áraink" },
   { href: "/programok", label: "Programok" },
+  { href: "/partnerek", label: "Partnerek" },
   { href: "/hazirend", label: "Házirend" },
   { href: "/kapcsolat", label: "Kapcsolat" },
 ];
